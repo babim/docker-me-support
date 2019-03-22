@@ -1,6 +1,6 @@
-FROM babim/oraclelinuxbase:7
+FROM babim/centosbase:7-x86
 ENV SOFT	SupportCenter
-ENV EDITTION	enterprise
+ENV EDITTION	free
 ENV SOFT_HOME	/opt/ManageEngine/${SOFT}
 
 # install depend
