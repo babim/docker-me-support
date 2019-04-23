@@ -3,9 +3,9 @@ ENV SOFT	SupportCenter
 ENV EDITTION	enterprise
 ENV SOFT_HOME	/opt/ManageEngine/${SOFT}
 
-# install depend
+# download option
 RUN yum install curl -y && \
-	curl -Ls https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20SCRIPT%20AUTO/option.sh -o /option.sh \
+	curl -Ls https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20SCRIPT%20AUTO/option.sh -o /option.sh && \
 	chmod +x /option.sh
 
 # install
